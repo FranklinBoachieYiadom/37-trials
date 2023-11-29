@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Element ID using JavaScript</title>
+</head>
+<body>
+    <div id="myDiv">This is a div element with an ID.</div>
+
+    <button onclick="getElementId()">Get Element ID</button>
+
+    <script>
+        function getElementId() {
+            // Get the element by its ID
+            var element = document.getElementById("myDiv");
+
+            if (element) {
+                // Access the id property
+                var elementId = element.id;
+
+                // Display the id in an alert
+                alert("Element ID: " + elementId);
+            } else {
+                alert("Element not found.");
+            }
+        }
+    </script>
+</body>
+</html>

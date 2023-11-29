@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Text Box Value and Store in Array</title>
+</head>
+<body>
+    <input type="text" id="inputText">
+    <button onclick="addToArray()">Add to Array</button>
+
+    <p>Array Values: <span id="arrayValues"></span></p>
+
+    <script>
+        // Initialize an empty array to store values
+        var valueArray = [];
+
+        function addToArray() {
+            // Get the input text box element
+            var inputElement = document.getElementById("inputText");
+
+            // Get the value from the input box
+            var textValue = inputElement.value;
+
+            // Check if the input is not empty
+            if (textValue.trim() !== "") {
+                // Add the value to the array
+                valueArray.push(textValue);
+
+                // Clear the input box
+                inputElement.value = "";
+
+                // Display the array values
+                document.getElementById("arrayValues").textContent = valueArray.join(", ");
+            }
+        }
+    </script>
+</body>
+</html>

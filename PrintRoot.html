@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 6px;
+        }
+        input[type="text"] {
+            width: 100%; 
+            outline: none;
+            border: none;
+        }
+        button{
+            margin-top: 5px;
+            padding: 10px 20px;
+            color: aliceblue;
+            background-color: black;
+        }
+        textarea{
+            width: 100%;
+            height:75px;
+            outline: none;
+            border: none;
+        }
+
+    </style>
+</head>
+    <body>
+        <h2><b><u>1.Medical Certificate</u></b></h2>
+        <table>
+            <tr>
+                <td> </td>  
+                <td colspan="10"><b><u>Medical Cerificate</u></b></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td > I hear by certify that I have Examined:</td>
+                <td> Test Examinee </td>
+                <td> AGE</td>
+                <td> 75</td>
+                <td> WEIGHT</td>
+                <td colspan="4"> 85</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="10"> I Find that:</td>
+            </tr>
+            <tr>
+
+                <td> </td>
+                <td>General Physique </td>
+                <td colspan="5"> 
+                    <select id="selectBox">
+                        <option value="NULL"> </option>
+                        <option value="aaa">Normal</option>
+                        <option value="bbbb">Abnormal</option>
+                    </select>
+                </td> 
+                <td> Comments:</td>
+                <td ><input type="text" id="c1"> </td>  
+
+                <!-- <td> </td>
+                <td> General Physique</td>
+                <td colspan="5"> Normal</td>
+                <td> Comments:</td>
+                <td ><input type="text" id="c1"> </td> -->
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Skeletal System</td>
+                <td colspan="5"> Abnormal </td>
+                <td > Comments:</td>
+                <td ><input type="text"  id="c2"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Chest Lungs & Heart: </td>
+                <td colspan="5"> Normal</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c3"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> BP: </td>
+                <td colspan="2"> 120/82 </td>
+                <td> Pulse </td>
+                <td colspan="2"> 85 </td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c4"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Abdomen:</td>
+                <td colspan="5"> Normal</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c5"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="3"> Hernia</td>
+                <td colspan="3"> Normal</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c6"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Uro-Genital System</td>
+                <td colspan="5"> Abnormal</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c7"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Ear-Nose Throat:</td>
+                <td colspan="5"> Abnormal</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c8"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="3"> Vision</td>
+                <td colspan="3"> 6/6</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c9"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Eyes:</td>
+                <td colspan="5"></td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c10"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Skin:</td>
+                <td colspan="5"> Normal</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c11"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="3"> Nervous System:</td>
+                <td colspan="3"> Strong</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c12"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Teeth:</td>
+                <td colspan="5"> Normal</td>
+                <td > Comments:</td>
+                <td ><input type="text" id="c13"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> RUST:</td>
+                <td colspan="5"> Normal</td>
+                <td> Comments:</td>
+                <td ><input type="text" id="c14"> </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="6"> <b><u>Cardiovascular System:</u></b></td>
+                <td colspan="3" align="center"> <b>Comments</b></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Pulse Rate: </td>
+                <td colspan="2"> 120/82 </td>
+                <td> Rhythm </td>
+                <td colspan="2"> Regular </td>
+                <td colspan="3" rowspan="4"><textarea id="c15"></textarea></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Volume: </td>
+                <td colspan="2"> Good </td>
+                <td> Collapsing </td>
+                <td colspan="2"> Yes </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> BP (mmHg) </td>
+                <td colspan="3"> Good </td>
+                <td>Apex Beat </td>
+                <td> Normal</td> 
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Heart Sounds </td>
+                <td colspan="2"> 3rd Heart sound </td>
+                <td> Others </td>
+                <td colspan="2"> Having been having severe pain </td>  
+            </tr>
+            <tr>
+                <td> </td>
+                <td colspan="6"> <b><u>Respiratory System:</u></b></td>
+                <td colspan="3" align="center"> <b>Comments</b></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Inspection </td>
+                <td colspan="2"> I realised that the heart was beating very fast</td>
+                <td> Palpation</td>
+                <td colspan="2"> Having been having severe pain </td>
+                <td colspan="3" rowspan="3"><textarea id="c16"></textarea></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> Purcussion Note</td>
+                <td colspan="2"> Dull</td>
+                <td> Others</td>
+                <td colspan="2"> Having been having severe pain </td>
+            </tr>
+                <td> </td>
+                <td> Auscultation </td>
+                <td colspan="2"> Air Entry </td>
+                <td> Absent</td>
+                <td> Others</td>
+                <td> Dull </td>
+            <tr>
+                <td> </td>
+                <td colspan="10"><b>FINAL STATUS: </b>
+                    <select id="selectBox" name="finalStatus">
+                    <option value="NULL"> </option>
+                    <option value="UNFIT">UNFIT</option>
+                    <option value="FIT">FIT</option>
+                    <option value="REVIEW">REVIEW</option>
+                    <option value="REFER TO SPECIALIST">REFER TO SPECIALIST</option>
+                </select>
+                </td>     
+            </tr>
+            </table>
+        <button onclick="addToArray()">Save</button>
+
+        <p>Comments: <span id="commentValues"></span></p>
+
+        <script>    
+     var valueArray = [];
+        function addToArray() {
+            for (var i = 1; i <= 16; i++) {
+                var inputElement = document.getElementById("c" + i);
+                var textValue = inputElement.value.trim();
+                
+                if (textValue !== "") {
+                    var elementId = inputElement.id
+                    valueArray.push(elementId +"**"+textValue);
+                    inputElement.value = "";
+                }   
+            }
+                var selectElement = document.getElementById("selectBox")
+                var selectValue = selectElement.value
+                var selectId = selectElement.id
+                valueArray.push(selectId +"**"+selectValue)
+                selectElement.value="";
+                
+                document.getElementById("commentValues").textContent = valueArray.join("||");
+
+        }
+  
+        </script>
+    </body>
+</html>
+
+
+
